@@ -43,4 +43,6 @@ def upload():
     return render_template('index.html', face_detected=len(faces)>0, num_faces=len(faces), image_to_show=to_send, init=True)
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=True, 
+            use_reloader=True,
+            port=3000)
