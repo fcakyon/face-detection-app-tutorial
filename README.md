@@ -1,4 +1,7 @@
 # Flask Face Detection
+
+<a href="https://github.com/fcakyon/face-detection-app-tutorial/actions/workflows/ci.yml"><img src="https://github.com/fcakyon/face-detection-app-tutorial/actions/workflows/ci.yml/badge.svg" alt="CI Tests"></a>
+
 A face detection web app powered by SSD face detector using Flask, OpenCV, Heroku 
 
 Live demo: https://face-detection-api-flask.herokuapp.com/
