@@ -2,6 +2,7 @@ import os
 from flask import Flask,jsonify,request,render_template
 from source.face_detection import detect_faces_with_ssd
 from source.utils import draw_rectangles, read_image, prepare_image
+from config import DETECTION_THRESHOLD
 
 app = Flask(__name__)
 
@@ -20,7 +21,7 @@ def detect():
     image = read_image(file)
     
     # Detect faces
-    faces = detect_faces_with_ssd(image)
+    faces = detect_faces_with_ssd(image, min_confidence=DETECTION_THRESHOLD)
 
     return jsonify(detections = faces)
 
