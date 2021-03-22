@@ -44,7 +44,7 @@ def draw_rectangles(image, faces):
     return num_faces, image
 
 def read_image(file):
-    image = cv2.imdecode(np.fromstring(file.read(), np.uint8), cv2.IMREAD_UNCHANGED)
+    image = cv2.imdecode(np.fromstring(file.read(), np.uint8), cv2.IMREAD_COLOR)
     return image
 
 def prepare_image(image):
