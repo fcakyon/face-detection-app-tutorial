@@ -1,0 +1,13 @@
+{
+    "name": "AI Face Detection App",
+    "description": "A face detection web app powered by SSD face detector using Flask, OpenCV, Heroku ",
+    "repository": "https://github.com/fcakyon/face-detection-app-tutorial",
+    "keywords": [
+        "tensorflow",
+        "python",
+        "flask",
+        "deep-learning",
+        "face-detection",
+        "opencv "
+    ]
+}
